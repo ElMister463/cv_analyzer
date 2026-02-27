@@ -1,25 +1,37 @@
-# 📄 AI CV Analyzer
+# 📄 AI CV Analyzer with LLMs
 
-Aplicación desarrollada en Python para analizar currículums utilizando modelos de lenguaje (LLMs).
+Aplicación web desarrollada con Streamlit que analiza currículums utilizando modelos de lenguaje (LLMs) mediante LangChain y la API de OpenAI.
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Características
+
+- 📂 Carga de archivos PDF de CV
+- 🧠 Análisis automático mediante LLM
+- 📊 Evaluación de habilidades
+- 📝 Generación de resumen profesional
+- 🎯 Matching entre CV y descripción de puesto (si lo tienes implementado)
+
+## 🛠️ Tecnologías
 
 - Python
+- Streamlit
+- LangChain
 - OpenAI API
-- LangChain (si lo usaste)
 - dotenv
 
-## 🎯 Objetivo
+## 🧩 Arquitectura
 
-Automatizar el análisis de CVs mediante procesamiento con modelos de lenguaje, permitiendo evaluar:
+El sistema sigue una arquitectura modular:
 
-- Compatibilidad con vacantes
-- Extracción de habilidades
-- Resumen profesional automático
+- `main.py` → Interfaz con Streamlit
+- `analyzer.py` → Lógica de análisis con LangChain
+- `utils.py` → Funciones auxiliares
+- `config.py` → Configuración del modelo y prompts
 
 ## ⚙️ Instalación
 
-1. Clonar el repositorio
+1. Clonar repositorio:
+   git clone https://github.com/tu_usuario/cv-analyzer.git
+
 2. Crear entorno virtual:
    python -m venv venv
    source venv/bin/activate  (Windows: venv\Scripts\activate)
@@ -30,4 +42,8 @@ Automatizar el análisis de CVs mediante procesamiento con modelos de lenguaje, 
 4. Crear archivo `.env` basado en `template.env`
 
 5. Ejecutar:
-   python main.py
+   streamlit run main.py
+
+## 🎯 Objetivo del proyecto
+
+Explorar el uso de modelos de lenguaje para automatizar procesos de análisis documental y evaluación de perfiles profesionales.
