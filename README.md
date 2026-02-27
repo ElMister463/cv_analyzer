@@ -8,7 +8,7 @@ Aplicación web desarrollada con Streamlit que analiza currículums utilizando m
 - 🧠 Análisis automático mediante LLM
 - 📊 Evaluación de habilidades
 - 📝 Generación de resumen profesional
-- 🎯 Matching entre CV y descripción de puesto (si lo tienes implementado)
+- 🎯 Matching entre CV y descripción de puesto 
 
 ## 🛠️ Tecnologías
 
@@ -18,14 +18,6 @@ Aplicación web desarrollada con Streamlit que analiza currículums utilizando m
 - OpenAI API
 - dotenv
 
-## 🧩 Arquitectura
-
-El sistema sigue una arquitectura modular:
-
-- `main.py` → Interfaz con Streamlit
-- `analyzer.py` → Lógica de análisis con LangChain
-- `utils.py` → Funciones auxiliares
-- `config.py` → Configuración del modelo y prompts
 
 ## ⚙️ Instalación
 
